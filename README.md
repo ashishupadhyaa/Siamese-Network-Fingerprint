@@ -6,7 +6,7 @@ This is my last sem project of my graduation. In this project, I used [SOCOFing 
 The network structure is as follows:
 ![Siamese-Network](model.png)
 
-## Loss
+## Contrastive Loss Function
 To train the model I used **contrastive loss** in which you tell the model that these datas are near to each other and these datas are not near to each other based on the *y_true* label you provided.
 You can check the loss function code in the notebook provided.
 
