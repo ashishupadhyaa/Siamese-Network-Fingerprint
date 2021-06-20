@@ -12,4 +12,4 @@ You can check the loss function code in the notebook provided.
 
 And, I also uploaded the trained model. If you want then you could download the trained model.
 
-**Note**:- I also integrated this model with django website which code i will provide later as I am currently working on that django site. and last note is that don't train this model on CPU as I have set image dataset as *channel first dataset* which only supported in GPU.
+The model is deployed with Django Framework and the code of that is in **bioDetail** folder.
