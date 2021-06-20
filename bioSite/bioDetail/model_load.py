@@ -18,7 +18,7 @@ def contrastive_loss_with_margin(margin):
 
 def model_l():
   mode = model((96, 96, 3))
-  mode.load_weights('bioDetail/your_model.h5') #Put your model name here.
+  mode.load_weights('bioDetail/model_siamese_net1_r.h5') #Put your model name here.
   mode.compile(loss=contrastive_loss_with_margin(2), optimizer=RMSprop())
   return mode
 
