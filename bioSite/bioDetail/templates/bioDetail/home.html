@@ -1,0 +1,36 @@
+{% extends 'bioDetail/header.html' %}
+{% load static %}
+{% block content %}
+	<div class="row">
+		<br><br><br>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 offset-sm-1">
+			<div class="card bg-dark text-white">
+  				<img src="{% static 'bioDetail/reg.jpg' %}" class="card-img">
+  				<div class="card-img-overlay">
+    				<h5 class="card-title"><a href="{% url 'bioDetail:register' %}" class="btn btn-success">Register<i class="bi bi-arrow-right"></i></a></h5>
+  				</div>
+  				<div class="card-header bg-info">Fingerprint Register</div>
+  				<div class="card-body bg-info">
+  					<h5 class="card-title">Register</h5>
+    				<p class="card-text">Register your fingerprint with details of yours in database.</p>
+  				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-4 offset-sm-2">
+			<div class="card bg-dark text-white">
+  				<img class="card-img" src="{% static 'bioDetail/auth.jpg' %}">
+  				<div class="card-img-overlay">
+    				<h5 class="card-title"><a href="{% url 'bioDetail:authentic' %}" class="btn btn-info">Authenticate<i class="bi bi-arrow-right"></i></a></h5> 				
+    			</div>
+    			<div class="card-header bg-success">Fingerprint Authenticate</div>
+  				<div class="card-body bg-success">
+  					<h5 class="card-title">Authenticate</h5>
+    				<p class="card-text">Authenticate your fingerprint from database and get your details.</p>
+  				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
